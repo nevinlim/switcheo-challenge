@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <title>Currency Swap</title>
+</head>
+<body>
+  <div class="theme-toggle">
+    <span id="light-theme-toggle" class="theme-toggle-option">☀︎</span>
+    <label class="switch">
+    <input type="checkbox" id="theme-toggle-checkbox">
+    <span class="slider"></span>
+    </label>
+    <span id="dark-theme-toggle" class="theme-toggle-option">☾ </span>
+  </div>  
+  <div class="container">
+    <h1>Currency ⮂ Swap</h1>    
+    <form>
+      <div class="input-group">
+        <input type="number" id="input-amount" required="" name="">
+        <label>Input Amount</label>
+        <img class="input-logo">
+        <select id="input-currency"></select>
+      </div>
+      <div class="input-group">
+        <input type="text" id="output-amount" readonly>
+        <label>Output Amount:</label>
+        <img class="output-logo">
+        <select id="output-currency"></select>
+      </div>
+      <button type="button" id="clear-button">Clear</button>
+    </form>
+  
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
